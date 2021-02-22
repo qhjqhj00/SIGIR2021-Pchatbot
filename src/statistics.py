@@ -43,3 +43,18 @@ class Statistics():
         Statistics.get_bucket(bucket_post)
         print("\nReponse Distribute:")
         Statistics.get_bucket(bucket_resp)
+    
+    @staticmethod
+    def stat_all(data):
+        post = set()
+        post_user = set()
+        resp_user = set()
+        resp = []
+        words = 0
+        for subs in data:
+            post.add(subs[0])
+            post_user.add(subs[1])
+            resp_user.add(subs[4])
+            resp.append(subs[3])
+            words += len(subs[0].split(' ')) + len(subs[4].split(' '))
+        print('post: ', len(post), 'resp: ', len(resp), '#user in post: ', len(post_user), '#user in resp: ', len(resp_user), 'avg. #resp per post: ', len(resp) / len(post), 'woeds: ', words, 'avg. #words per pair: ', words / len(resp))
