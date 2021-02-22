@@ -41,11 +41,17 @@ Please fill in the application form and send it to the contact mail, we will the
 
 #### Pchatbot Files
 
-(我上传到阿里云上的格式为 PchatbotL.tar.bz2 和 PchatbotW.tar.bz2，介绍一下怎么解压)
-
+The upload format of the dataset is .tar.bz2, you can decompress it as follows：
+```python
+tar -jxvf xx.tar.bz2
+```
 
 
 `PchatbotL.release_ver` 
+
+The format of each piece of data in the data set is：
+`Post \t Post_user_id \t Post_timestamp \t Response \t Response_user_id \t Response_timestamp \n`
+post and response are sentences with word segmentation, separated by spaces.And we give several examples of the data in data/sample.txt
 
 (写一下格式和文件介绍，给几个sample，目前这两个文件在155服务器：/home/hanxun_zhong/data/PChatbot下)
 
@@ -72,6 +78,7 @@ https://creativecommons.org/licenses/by-nc/2.0/
 
 
 ## Citation
+
 @article{li2020pchatbot,
   title={Pchatbot: A Large-Scale Dataset for Personalized Chatbot},
   author={Li, Xiaohe and Zhong, Hanxun and Guo, Yu and Ma, Yueyuan and Qian, Hongjin and Liu, Zhanliang and Dou, Zhicheng and Wen, Ji-Rong},
