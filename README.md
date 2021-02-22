@@ -4,14 +4,12 @@
 
 ### Introduction
 
-(英文简介)
+we introduce Pchatbot, a large scale conversation dataset dedicated for the development of personalized dialogue models. In this dataset, we assign anonymized user IDs and timestamps to conversations. Users’ dialogue histories can be retrieved and used to build rich user profiles. With the availability of the dialogue histories, we can move from personality based models to personalized models.
 
-
-
-
+Pchatbot has two subsets, named PchatbotW and PchatbotL, built from open-domain Weibo and judicial forums respectively.Since the data volume of each sub-data set is too large, we divided each sub-data set into 10 equal parts according to the number of users, and named them PchatbotW-i and PchatbotL-i.
 ### Dataset Statistics
 
-（英文简介）
+The detailed data of the data set is shown in the following table:
 
 |                         | PchatbotW     | PchatbotL     | PchatbotW-1 | PchatbotL-1 |
 |-------------------------|---------------|---------------|-------------|-------------|
@@ -50,7 +48,9 @@ tar -jxvf xx.tar.bz2
 `PchatbotL.release_ver` 
 
 The format of each piece of data in the data set is：
+
 `Post \t Post_user_id \t Post_timestamp \t Response \t Response_user_id \t Response_timestamp \n`
+
 post and response are sentences with word segmentation, separated by spaces.And we give several examples of the data in data/sample.txt
 
 (写一下格式和文件介绍，给几个sample，目前这两个文件在155服务器：/home/hanxun_zhong/data/PChatbot下)
