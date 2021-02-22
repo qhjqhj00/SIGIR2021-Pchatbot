@@ -1,10 +1,18 @@
-# Pchatbot
+# Pchatbot: A Large-Scale Dataset for Personalized Chatbot
 
-## Dataset
+[Chinese Version](https://github.com/qhjqhj00/Pchatbot/blob/main/README_zh.md)
+
 ### Introduction
-我们介绍了Pchatbot，这是一个大规模的用于开发个性化对话模型的数据集。在这个数据集中，我们保留了匿名的用户ID和会话时间戳，可以检索用户的对话历史记录并用于建立丰富的用户个人资料。依据对话历史，我们可以让聊天机器人从历史对话中学习语言和语义信息，并根据所学知识生成个性化回复。Pchatbot有两个子集，名为PchatbotW(爬取微博数据构建)和PchatbotL(爬取司法论坛构建)。由于每个子数据集的数据量都过于庞大，我们将每个子数据集按照用户数量等分成10份，命名为PchatbotW-i和PchatbotL-i。
-### Statics
-数据集的详细数据如下表所示
+
+(英文简介)
+
+
+
+
+### Dataset Statistics
+
+（英文简介）
+
 |                         | PchatbotW     | PchatbotL     | PchatbotW-1 | PchatbotL-1 |
 |-------------------------|---------------|---------------|-------------|-------------|
 | #Posts                  | 5,319,596     | 20,145,956    | 3,597,407   | 4,662,911   |
@@ -15,33 +23,43 @@
 | Max.#responses per post | 525           | 120           | 136         | 26          |
 | #Words                  | 8,512,945,238 | 3,013,617,497 | 855,005,996 | 284,099,064 |
 | Avg.#words per pair     | 61.047        | 51.014        | 61.103      | 51.438      |
-### 数据集样例
 
-### 数据处理方案
-由于社交媒体的性质，微博用户发布的帖子和回复非常多，几乎涵盖了日常生活的各个方面。因此，用户之间的交互可视为公开的日常休闲对话领域。而微博文字是随意的，语言噪音几乎无处不在。为了提高数据质量，我们以下执行数据清理操作。
-*删除标签。 
-用户喜欢标记他们的通过主题标签包含相关主题的内容，通常由几个独立的用“＃”包裹的单词或摘要。拼接将文本标记为内容的标签会影响语义的连贯性。因此，我们从文本中删除了这一部分。
 
-*删除URL。 
-用户的帖子和回复包含多媒体内容，图像，视频，和其他网页。它们将被转换成微博中的URL。这些URL也会被清除。
+To obtain statistics, run:
 
-*删除表情符号。
-用户使用图释（包括表情符号和kaomoji）传达文本中的情感。表情由符号组成，这些符号会在对话中引入噪音。我们通过正则表达式和字典清理这些表情。
+`python statistics.py`
 
-*处理@操作。
-用户使用“ @昵称”提及或注意到其他用户。当用户评论或转发其他人，“回复@昵称：”和“ // @昵称：”将自动添加到用户的内容中。这些提及只是提醒，与用户的内容无关。我们将其删除，以确保话语的一致性。
+(这个跟zhx确认)
 
-*处理重复的文本。
-文字重复具有不同的粒度。 1）字级。重复的汉字将标准化为两个。例如，“太好笑了，哈哈哈哈哈”（“太有趣了。哈哈哈哈哈”）被标准化为“太好笑了，哈哈”（‘真有趣哈哈'）。 2）一个帖子下的回复。不同的用户可能发送相同的帖子下的回复。重复的回应在帖子下减少互动的种类，因此我们删除了重复的响应发生超过三遍。 3）语料库级别的重复话语。语料库中的重复话语过多将影响数据集。模型将倾向于产生单一的回复。我们限制相同回复的频率为10000。
+### Data Content and Format
 
-*多种语言。
-由于微博回复的多样性，一些用户的内容包含多种语言。我们删除汉字比例低于30％的文本以构建更纯净的文本中文数据集。
+#### Obtain the data 
+
+Please fill in the application form and send it to the contact mail, we will then send download links to you.
+
+[Application Form](https://github.com/qhjqhj00/Pchatbot/blob/main/application.pdf)
+
+#### Pchatbot Files
+
+(我上传到阿里云上的格式为 PchatbotL.tar.bz2 和 PchatbotW.tar.bz2，介绍一下怎么解压)
+
+
+
+`PchatbotL.release_ver` 
+
+(写一下格式和文件介绍，给几个sample，目前这两个文件在155服务器：/home/hanxun_zhong/data/PChatbot下)
+
+`PchatbotW.release_ver`
+
+
+
+### Data Preprocessing
+
+（跟zhx确定一下处理的代码）
 
 
 
 ## Citation
-如果您需要使用这个项目的数据或代码，请引用我们的论文，
-
 @article{li2020pchatbot,
   title={Pchatbot: A Large-Scale Dataset for Personalized Chatbot},
   author={Li, Xiaohe and Zhong, Hanxun and Guo, Yu and Ma, Yueyuan and Qian, Hongjin and Liu, Zhanliang and Dou, Zhicheng and Wen, Ji-Rong},
@@ -49,3 +67,6 @@
   year={2020}
 }
 
+
+
+### 
