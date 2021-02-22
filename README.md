@@ -59,6 +59,18 @@ Please fill in the application form and send it to the contact mail, we will the
 
 
 
+### License
+
+（我们的数据集使用这个license，简单介绍一下）
+
+https://creativecommons.org/licenses/by-nc/2.0/
+
+
+
+### FAQ
+
+
+
 ## Citation
 @article{li2020pchatbot,
   title={Pchatbot: A Large-Scale Dataset for Personalized Chatbot},
