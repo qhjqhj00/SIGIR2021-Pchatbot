@@ -34,16 +34,15 @@ def load(in_path):
     user = 0
     for filename in tqdm(filenames):
         fhand = open(os.path.join(in_path,filename))
+        fdata = json.loads(fhand.read())
         user += 1
         user_data = []
         user_history = []
         if user > 300000:
             break
-        for line in fhand:
+        for subs in fdata:
             cnt += 1
-            subs = line.strip().split('\t')
-            if len(subs) != 8:
-                continue
+            assert len(subs) == 6
             if clean(subs):
                 his = gen_history(copy.deepcopy(user_data))
                 user_history.append(his)
@@ -62,7 +61,8 @@ def load(in_path):
 def store_data(data, model_data_dir, phase):
     post, resp, user =[], [], []
     label = ''
-
+    if not os.path.exists(model_data_dir):
+        os.makedirs(model_data_dir)
     if not os.path.exists(os.path.join(model_data_dir, phase.split('_')[0])):
         os.mkdir(os.path.join(model_data_dir, phase))
     if 'his' in phase:
@@ -76,12 +76,12 @@ def store_data(data, model_data_dir, phase):
             if len(line) == 0:
                 p, r, r_uid = '<\s>', '<\s>', '<\s>'
             elif label != 'his':
-                p, p_uid, p_time, r, r_uid, r_time, _, phase = line
+                p, p_uid, p_time, r, r_uid, r_time = line
                 fuser.write(r_uid+'\n')
             else:
                 p, r = '', '' 
                 for his in line:
-                    p_his, p_uid, p_time, r_his, r_uid, r_time, _, phase = his
+                    p_his, p_uid, p_time, r_his, r_uid, r_time = his
                     if len(p) == 0:
                         p, r = p_his, r_his
                     else:
@@ -91,8 +91,8 @@ def store_data(data, model_data_dir, phase):
             fresp.write(r+'\n')
                 
 if __name__ == "__main__":
-    data_fp = "../data/PChatbot_byuser_filter"
-    model_data_dir = "../data/Pdata/weibo_sim"
+    data_fp = "../data/sample_byuser_filter"
+    model_data_dir = "../data/sample_datasets"
     train_data, dev_data, test_data, train_his_data, dev_his_data, test_his_data = load(data_fp)
     store_data(train_data, model_data_dir, 'train')
     store_data(dev_data, model_data_dir, 'dev')
