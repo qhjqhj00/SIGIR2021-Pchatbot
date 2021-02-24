@@ -54,7 +54,7 @@ The format of each piece of data in the data set is：
 post and response are sentences with word segmentation, separated by spaces.And we give several examples of the data in data/sample.txt
 
 (写一下格式和文件介绍，给几个sample，目前这两个文件在155服务器：/home/hanxun_zhong/data/PChatbot下)
-
+We also give some examples of user personalized information, as shown in the figure below, due to space constraints, we only selected 5 historical records for the user in each example.
 `PchatbotW.release_ver`
 <table>
    <tr>
