@@ -9,7 +9,7 @@ we introduce Pchatbot, a large scale conversation dataset dedicated for the deve
 Pchatbot has two subsets, named PchatbotW and PchatbotL, built from open-domain Weibo and judicial forums respectively.Since the data volume of each sub-data set is too large, we divided each sub-data set into 10 equal parts according to the number of users, and named them PchatbotW-i and PchatbotL-i.
 ### Dataset Statistics
 
-The detailed data of the data set is shown in the following table:
+The detailed statistics of Pchatbot is shown in the following table:
 
 |                         | PchatbotW     | PchatbotL     | PchatbotW-1 | PchatbotL-1 |
 |-------------------------|---------------|---------------|-------------|-------------|
@@ -23,11 +23,25 @@ The detailed data of the data set is shown in the following table:
 | Avg.#words per pair     | 61.047        | 51.014        | 61.103      | 51.438      |
 
 
+
+We construct two standard dataset from Pchatbot for both generation-based and retrieval-based tasks, named PchatbotW-R and PchatbotW-G. The two datasets can be directly used in coressponding dialogue tasks. Their statistics are shown in the following table:
+
+|                               | PchatbotW-R | PchatbotW-G |
+| ----------------------------- | ----------- | ----------- |
+| Number of users               | 420,000     | 300,000     |
+| Avg. history length           | 32.3        | 11.4        |
+| Avg. length of post           | 24.9        | 22.9        |
+| Avg. length of response       | 10.1        | 9.6         |
+| Number of response candidates | 10          | -           |
+| Number of training samples    | 3,000,000   | 2,707,880   |
+| Number of validation samples  | 600,000     | 600,000     |
+| Number of testing samples     | 600,000     | 600,000     |
+
 To obtain statistics, run:
 
-`python statistics.py`
+`python src/statistics.py`
 
-(这个跟zhx确认)
+We will then release standard datasets for PchatbotL.
 
 ### Data Content and Format
 
@@ -44,18 +58,16 @@ The upload format of the dataset is .tar.bz2, you can decompress it as follows�
 tar -jxvf xx.tar.bz2
 ```
 
-
-`PchatbotL.release_ver` 
-
 The format of each piece of data in the data set is：
 
 `Post \t Post_user_id \t Post_timestamp \t Response \t Response_user_id \t Response_timestamp \n`
 
 post and response are sentences with word segmentation, separated by spaces.And we give several examples of the data in data/sample.txt
 
-(写一下格式和文件介绍，给几个sample，目前这两个文件在155服务器：/home/hanxun_zhong/data/PChatbot下)
+
 We also give some examples of user personalized information, as shown in the figure below, due to space constraints, we only selected 5 historical records for the user in each example.
 `PchatbotW.release_ver`
+
 <table>
    <tr>
       <td>Post</td>
@@ -98,15 +110,39 @@ We also give some examples of user personalized information, as shown in the fig
 
 ### Data Preprocessing
 
-（跟zhx确定一下处理的代码）
+Instructions for data cleaning, preprocessing, aggregation and dataset constructs are in `./src/` folder.
+
+### Baseline models
+
+We provide results of baseline models on the PchatbotW-R and PchatbotW-G dataset. We will continue to update the results of other baseline models:
+
+#### PchatbotW-R
+
+|           | R10@1 | R10@2 | R10@5 | MRR   | nDCG  | Paper                                                        | Code                                 |
+| --------- | ----- | ----- | ----- | ----- | ----- | ------------------------------------------------------------ | ------------------------------------ |
+| Conv-KNRM | 0.323 | 0.520 | 0.893 | 0.538 | 0.818 | Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search | https://github.com/yunhenk/Conv-KNRM |
+| DAM       | 0.438 | 0.644 | 0.966 | 0.635 | 0.881 | Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network | https://github.com/baidu/Dialogue    |
+| IOI       | 0.442 | 0.651 | 0.969 | 0.639 | 0.890 | One Time of Interaction May Not Be Enough: Go Deep with an Interaction-over-Interaction Network for Response Selection in Dialogues | https://github.com/chongyangtao/IOI  |
+| RSM-DCK   | 0.428 | 0.627 | 0.947 | 0.623 | 0.858 | Learning to Detect Relevant Contexts and Knowledge for Response Selection in Retrieval-based Dialogue Systems | Provided by the author               |
+
+
+
+#### PchatbotW-G
+
+|            | BLEU-1 | ROUGE-L | Dist-1 | Dist-2 | P-F1 | Paper | Code |
+| ---------- | ------ | ------- | ------ | ------ | ---- | ----- | ---- |
+| Seq2Seq    |        |         |        |        |      |       |      |
+| SPEAKER    |        |         |        |        |      |       |      |
+| PERSONAWAE |        |         |        |        |      |       |      |
+| DialoGPT   |        |         |        |        |      |       |      |
 
 
 
 ### License
 
-（我们的数据集使用这个license，简单介绍一下）
+This repository is liciensed under Apache-2.0 License.
 
-https://creativecommons.org/licenses/by-nc/2.0/
+The Pchatbot dataset is liciensed under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/).
 
 
 
