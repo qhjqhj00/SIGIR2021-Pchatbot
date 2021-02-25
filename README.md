@@ -90,8 +90,7 @@ We also give some examples of user personalized information, as shown in the fig
   <td colspan=2 style='mso-ignore:colspan'>烦烦 和 光光 就是 永远 都 吃 不 胖 的 神仙 体质</td>
  </tr>
  <tr >
-  <td 因 為荔 枝樹 不是 每年 都 能 結果 ， 不是 每年 都 能 吃到 ， 但 卻是 每年 夏天 我 最 期待 的 水果 ， 期待 的 童年味 ， 在
-  河邊 玩耍 ， 在 樹下 等 荔枝 的 夏日 。</td>
+  <td> 因 為荔 枝樹 不是 每年 都 能 結果 ， 不是 每年 都 能 吃到 ， 但 卻是 每年 夏天 我 最 期待 的 水果 ， 期待 的 童年味 ， 在 河邊 玩耍 ， 在 樹下 等 荔枝 的 夏日 。</td>
   <td>一定 要 有 机会 了 去 南方 看看 荔枝树 的 样子</td>
  </tr>
  <tr >
