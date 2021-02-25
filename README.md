@@ -67,16 +67,14 @@ post and response are sentences with word segmentation, separated by spaces.And 
 
 We also give some examples of user personalized information, as shown in the figure below, due to space constraints, we only selected 5 historical records for the user in each example.
 `PchatbotW.release_ver`
-<table border=0 cellpadding=0 cellspacing=0 width=761 style='border-collapse:
- collapse;table-layout:fixed;width:570pt'>
- <col width=87 style='width:65pt'>
- <col width=252 style='mso-width-source:userset;mso-width-alt:8064;width:189pt'>
- <col width=335 style='mso-width-source:userset;mso-width-alt:10709;width:251pt'>
- <col width=87 style='width:65pt'>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 width=87 style='height:16.0pt;width:65pt'>Post</td>
-  <td colspan=2 class=xl67 width=587 style='width:440pt'>酒酿 小 圆子 窝蛋 ， 蒸 南瓜 玉米 和
-  阳光 玫瑰 山寨 一 把 芳婆 的 酒酿 圆子 ， 挺 好吃 的 ， 加 了 点干 桂花 增香</td>
+<table style='border-collapse:collapse;table-layout:fixed;'>
+ <col>
+ <col style='mso-width-source:userset;mso-width-alt:8064;'>
+ <col style='mso-width-source:userset;mso-width-alt:10709'>
+ <col >
+ <tr >
+  <td>Post</td>
+  <td colspan=2 >酒酿 小 圆子 窝蛋 ， 蒸 南瓜 玉米 和 阳光 玫瑰 山寨 一 把 芳婆 的 酒酿 圆子 ， 挺 好吃 的 ， 加 了 点干 桂花 增香</td>
   <td width=87 style='width:65pt'></td>
  </tr>
  <tr height=21 style='height:16.0pt'>
@@ -90,10 +88,9 @@ We also give some examples of user personalized information, as shown in the fig
   <td>History Response</td>
   <td></td>
  </tr>
- <tr height=21 style='height:16.0pt'>
-  <td height=21 style='height:16.0pt'>今日 晚餐 黄焖鸡 ， 红烧 带鱼 和 <span
-  style='display:none'>丝瓜蛋 汤 淘鲜达 送来 的 带鱼 不 好 ， 说 是 中段 ， 实际 是 前段 和 尾巴 ， 没 多少 肉 都
-  懒得 拍 。 黄焖鸡 太 下饭 啦 ， 和 家属 都 添 了 小 半 碗 米饭 。 下午 做 的 巧克力 冰淇淋 ， 味道 棒棒 哒</span></td>
+ <tr >
+  <td >今日 晚餐 黄焖鸡 ， 红烧 带鱼 和 丝瓜蛋 汤 淘鲜达 送来 的 带鱼 不 好 ， 说 是 中段 ， 实际 是 前段 和 尾巴 ， 没 多少 肉 都
+  懒得 拍 。 黄焖鸡 太 下饭 啦 ， 和 家属 都 添 了 小 半 碗 米饭 。 下午 做 的 巧克力 冰淇淋 ， 味道 棒棒 哒</td>
   <td colspan=2 style='mso-ignore:colspan'>烦烦 和 光光 就是 永远 都 吃 不 胖 的 神仙 体质</td>
  </tr>
  <tr height=21 style='height:16.0pt'>
