@@ -114,7 +114,7 @@ Instructions for data cleaning, preprocessing, aggregation and dataset construct
 
 ### Baseline models
 
-We provide results of baseline models on the PchatbotW-R and PchatbotW-G dataset. We will continue to update the results of other baseline models:
+We provide results of baseline models on the PchatbotW-R and PchatbotW-G dataset. For evaluation details, please refer to our [paper](https://arxiv.org/abs/2009.13284). We will continue to update the results of other baseline models:
 
 #### PchatbotW-R
 
