@@ -173,12 +173,12 @@ We provide results of baseline models on the PchatbotW-R and PchatbotW-G dataset
 
 #### PchatbotW-G
 
-|            | BLEU-1 | ROUGE-L | Dist-1 | Dist-2 | P-F1 | Paper | Code |
-| ---------- | ------ | ------- | ------ | ------ | ---- | ----- | ---- |
-| Seq2Seq    |        |         |        |        |      |       |      |
-| SPEAKER    |        |         |        |        |      |       |      |
-| PERSONAWAE |        |         |        |        |      |       |      |
-| DialoGPT   |        |         |        |        |      |       |      |
+|            | BLEU-1 | ROUGE-L | Dist-1 | Dist-2 | P-F1  | Paper                                                        | Code                                   |
+| ---------- | ------ | ------- | ------ | ------ | ----- | ------------------------------------------------------------ | -------------------------------------- |
+| Seq2Seq    | 4.889  | 7.594   | 0.229  | 3.404  | 0.771 | Sequence to Sequence Learning with Neural Networks           | https://github.com/IBM/pytorch-seq2seq |
+| SPEAKER    | 3.958  | 5.580   | 0.951  | 29.780 | 1.534 | A Persona-Based Neural Conversation Model                    | \                                      |
+| PERSONAWAE | 1.945  | 9.064   | 0.523  | 8.549  | 6.408 | Modeling Personalization in Continuous Space for Response Generation via Augmented Wasserstein Autoencoders | \                                      |
+| DialoGPT   | 5.038  | 7.358   | 13.995 | 52.674 | 3.562 | DialoGPT: Large-Scale Generative Pre-training for Conversational Response Generation | https://github.com/microsoft/DialoGPT  |
 
 
 

@@ -39,6 +39,8 @@ class Split():
 
     def filter_data(self, data):
         history_cnt = Counter([subs[4] for subs in data])
+        data = [subs for subs in data if 60 <= history_cnt[subs[4]] <= 1000]
+        history_cnt = Counter([subs[4] for subs in data])
         Statistics.get_bucket(history_cnt.values())
         return data
 
