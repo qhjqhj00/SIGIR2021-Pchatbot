@@ -4,15 +4,18 @@
 
 ### Introduction
 
-we introduce Pchatbot, a large scale conversation dataset dedicated for the development of personalized dialogue models. In this dataset, we assign anonymized user IDs and timestamps to conversations. Users’ dialogue histories can be retrieved and used to build rich user profiles. With the availability of the dialogue histories, we can move from personality based models to personalized models.
+We introduce Pchatbot, a large scale conversation dataset dedicated for the development of personalized dialogue models. In this dataset, we assign anonymized user IDs and timestamps to conversations. Users’ dialogue histories can be retrieved and used to build rich user profiles. With the availability of the dialogue histories, we can move from personality based models to personalized models.
 
 Pchatbot has two subsets, named PchatbotW and PchatbotL, built from open-domain Weibo and judicial forums respectively.Since the data volume of each sub-data set is too large, we divided each sub-data set into 10 equal parts according to the number of users, and named them PchatbotW-i and PchatbotL-i.
+
+The dataset paper is accepted to SIGIR 2021 (Resource Track). See [paper](https://arxiv.org/pdf/2009.13284.pdf) for more details. 
+
 ### Dataset Statistics
 
 The detailed statistics of Pchatbot is shown in the following table:
 
 |                         | PchatbotW     | PchatbotL     | PchatbotW-1 | PchatbotL-1 |
-|-------------------------|---------------|---------------|-------------|-------------|
+| ----------------------- | ------------- | ------------- | ----------- | ----------- |
 | #Posts                  | 5,319,596     | 20,145,956    | 3,597,407   | 4,662,911   |
 | #Responses              | 139,448,339   | 59,427,457    | 13,992,870  | 5,523,160   |
 | #Users in posts         | 772,002       | 5,203,345     | 417,294     | 1,107,989   |
@@ -54,6 +57,7 @@ Please fill in the application form and send it to the contact mail, we will the
 #### Pchatbot Files
 
 The upload format of the dataset is .tar.bz2, you can decompress it as follows：
+
 ```python
 tar -jxvf xx.tar.bz2
 ```
@@ -67,6 +71,7 @@ post and response are sentences with word segmentation, separated by spaces.And 
 
 We also give some examples of user personalized information, as shown in the figure below, due to space constraints, we only selected 5 historical records for the user in each example.
 `PchatbotW.release_ver`
+
 <table style='border-collapse:collapse;table-layout:fixed;'>
  <col>
  <col style='mso-width-source:userset;mso-width-alt:8064;'>
@@ -107,7 +112,9 @@ We also give some examples of user personalized information, as shown in the fig
   <td>这个 蘑菇 看 起来 特别 好吃</td>
  </tr>
 
+
 </table>
+
 <table style='border-collapse:collapse;table-layout:fixed;'>
  <col>
  <col style='mso-width-source:userset;mso-width-alt:8064;'>
@@ -146,6 +153,7 @@ We also give some examples of user personalized information, as shown in the fig
   <td>大家 觉得 猛龙 和 雄鹿 谁 最 有 可能 进入 到 总决赛 ？</td>
   <td>范乔丹 ： 看 老子 心情 吧</td>
  </tr>
+
 
 </table>
 
@@ -196,11 +204,13 @@ The Pchatbot dataset is liciensed under [CC BY-NC 2.0](https://creativecommons.o
 
 ## Citation
 
-@article{li2020pchatbot,
-  title={Pchatbot: A Large-Scale Dataset for Personalized Chatbot},
-  author={Li, Xiaohe and Zhong, Hanxun and Guo, Yu and Ma, Yueyuan and Qian, Hongjin and Liu, Zhanliang and Dou, Zhicheng and Wen, Ji-Rong},
-  journal={arXiv preprint arXiv:2009.13284},
-  year={2020}
+@misc{qian2021pchatbot,
+      title={Pchatbot: A Large-Scale Dataset for Personalized Chatbot}, 
+      author={Hongjin Qian and Xiaohe Li and Hanxun Zhong and Yu Guo and Yueyuan Ma and Yutao Zhu and Zhanliang Liu and Zhicheng Dou and Ji-Rong Wen},
+      year={2021},
+      eprint={2009.13284},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 
 
