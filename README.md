@@ -6,13 +6,13 @@
 
 We introduce Pchatbot, a large scale conversation dataset dedicated for the development of personalized dialogue models. In this dataset, we assign anonymized user IDs and timestamps to conversations. Users’ dialogue histories can be retrieved and used to build rich user profiles. With the availability of the dialogue histories, we can move from personality based models to personalized models.
 
-Pchatbot has two subsets, named PchatbotW and PchatbotL, built from open-domain Weibo and judicial forums respectively.Since the data volume of each sub-data set is too large, we divided each sub-data set into 10 equal parts according to the number of users, and named them PchatbotW-i and PchatbotL-i.
+Pchatbot has two subsets, named PchatbotW and PchatbotL, built from open-domain Weibo and judicial forums respectively. Since the data volume of each sub-data set is too large, we divided each sub-data set into 10 equal parts according to the number of users, and named them PchatbotW-i and PchatbotL-i.
 
 The dataset paper is accepted to SIGIR 2021 (Resource Track). See [paper](https://arxiv.org/pdf/2009.13284.pdf) for more details. 
 
 ### Dataset Statistics
 
-The detailed statistics of Pchatbot is shown in the following table:
+The detailed statistics of Pchatbot shows as follow:
 
 |                         | PchatbotW     | PchatbotL     | PchatbotW-1 | PchatbotL-1 |
 | ----------------------- | ------------- | ------------- | ----------- | ----------- |
@@ -27,7 +27,7 @@ The detailed statistics of Pchatbot is shown in the following table:
 
 
 
-We construct two standard dataset from Pchatbot for both generation-based and retrieval-based tasks, named PchatbotW-R and PchatbotW-G. The two datasets can be directly used in coressponding dialogue tasks. Their statistics are shown in the following table:
+We construct two standard dataset from Pchatbot for both generation-based and retrieval-based tasks, named PchatbotW-R and PchatbotW-G. The two datasets can be directly used in coressponding dialogue tasks. We will release the standard dataset then. Their statistics are shown in the following table:
 
 |                               | PchatbotW-R | PchatbotW-G |
 | ----------------------------- | ----------- | ----------- |
@@ -50,7 +50,25 @@ We will then release standard datasets for PchatbotL.
 
 #### Obtain the data 
 
-Please fill in the application form and send it to the contact mail, we will then send download links to you.
+For now we provide download link via Baidu Cloud which may be a bit slow outside mainland, China. We will update Google drive link asap.
+
+Pchatbot-L:
+
+[Link](https://pan.baidu.com/s/13j6EY5R0ZZQwwfZjo-Uh4A )
+
+Password : \****
+
+md5: 48bd7ab93f625ebdf34c7254ff27ac2a
+
+Pchatbot-W:
+
+[Link](https://pan.baidu.com/s/1ziyhvDDyuCsNXW0lKBO5ZQ)
+
+Password: \****
+
+md5: cd443951973f47f5614df298e6e416da
+
+**Please fill in the application form and send it to the contact mail, we will then send download password to you.**
 
 [Application Form](https://github.com/qhjqhj00/Pchatbot/blob/main/application.pdf)
 
