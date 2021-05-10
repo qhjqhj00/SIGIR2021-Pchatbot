@@ -10,6 +10,30 @@ Pchatbot has two subsets, named PchatbotW and PchatbotL, built from open-domain 
 
 The dataset paper is accepted to SIGIR 2021 (Resource Track). See [paper](https://arxiv.org/pdf/2009.13284.pdf) for more details. 
 
+## Citation
+
+If you use the dataset in your work, please cite:
+
+@misc{qian2021pchatbot,
+      title={Pchatbot: A Large-Scale Dataset for Personalized Chatbot}, 
+      author={Hongjin Qian and Xiaohe Li and Hanxun Zhong and Yu Guo and Yueyuan Ma and Yutao Zhu and Zhanliang Liu and Zhicheng Dou and Ji-Rong Wen},
+      year={2021},
+      eprint={2009.13284},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+We also have a paper that uses the Pchatbot dataset. If you're working on generation-based personalized chatbot, you might be interested in the following work:
+
+@inproceedings{DBLP:conf/sigir/madousigir21,
+     author = {Zhengyi Ma and Zhicheng Dou and Yutao Zhu Hanxun Zhong and Ji-Rong Wen}, 
+     title = {One Chatbot Per Person: Creating Personalized Chatbots based onImplicit User Profiles}, 
+     booktitle = {Proceedings of the {SIGIR} 2021}, 
+     publisher = {{ACM}}, 
+     year = {2021}, 
+     url = {https://doi.org/10.1145/3404835.3462828}, 
+     doi = {10.1145/3404835.3462828}, }
+
 ### Dataset Statistics
 
 The detailed statistics of Pchatbot shows as follow:
@@ -69,6 +93,7 @@ Password: \****
 md5: cd443951973f47f5614df298e6e416da
 
 **Please fill in the application form and send it to the contact mail, we will then send download password to you.**
+**We will update the download password regularly.**
 
 [Application Form](https://github.com/qhjqhj00/Pchatbot/blob/main/application.pdf)
 
@@ -218,18 +243,6 @@ The Pchatbot dataset is liciensed under [CC BY-NC 2.0](https://creativecommons.o
 
 ### FAQ
 
-
-
-## Citation
-
-@misc{qian2021pchatbot,
-      title={Pchatbot: A Large-Scale Dataset for Personalized Chatbot}, 
-      author={Hongjin Qian and Xiaohe Li and Hanxun Zhong and Yu Guo and Yueyuan Ma and Yutao Zhu and Zhanliang Liu and Zhicheng Dou and Ji-Rong Wen},
-      year={2021},
-      eprint={2009.13284},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
 
 
 
