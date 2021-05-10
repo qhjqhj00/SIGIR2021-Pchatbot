@@ -13,7 +13,7 @@ The dataset paper is accepted to SIGIR 2021 (Resource Track). See [paper](https:
 ## Citation
 
 If you use the dataset in your work, please cite:
-
+```
 @misc{qian2021pchatbot,
       title={Pchatbot: A Large-Scale Dataset for Personalized Chatbot}, 
       author={Hongjin Qian and Xiaohe Li and Hanxun Zhong and Yu Guo and Yueyuan Ma and Yutao Zhu and Zhanliang Liu and Zhicheng Dou and Ji-Rong Wen},
@@ -22,9 +22,12 @@ If you use the dataset in your work, please cite:
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
+```
 
-We also have a paper that uses the Pchatbot dataset. If you're working on generation-based personalized chatbot, you might be interested in the following work:
+The following paper uses the Pchatbot dataset:
 
+1. One Chatbot Per Person: Creating Personalized Chatbots based on Implicit User Profiles (SIGIR 2021 Long Paper)
+```
 @inproceedings{DBLP:conf/sigir/madousigir21,
      author = {Zhengyi Ma and Zhicheng Dou and Yutao Zhu Hanxun Zhong and Ji-Rong Wen}, 
      title = {One Chatbot Per Person: Creating Personalized Chatbots based onImplicit User Profiles}, 
@@ -33,6 +36,7 @@ We also have a paper that uses the Pchatbot dataset. If you're working on genera
      year = {2021}, 
      url = {https://doi.org/10.1145/3404835.3462828}, 
      doi = {10.1145/3404835.3462828}, }
+```
 
 ### Dataset Statistics
 
