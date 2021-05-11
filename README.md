@@ -82,21 +82,13 @@ For now we provide download link via Baidu Cloud which may be a bit slow outside
 
 Pchatbot-L:
 
-[Link](https://pan.baidu.com/s/13j6EY5R0ZZQwwfZjo-Uh4A )
-
-Password : \****
-
 md5: 48bd7ab93f625ebdf34c7254ff27ac2a
 
 Pchatbot-W:
 
-[Link](https://pan.baidu.com/s/1ziyhvDDyuCsNXW0lKBO5ZQ)
-
-Password: \****
-
 md5: cd443951973f47f5614df298e6e416da
 
-**Please fill in the application form and send it to the contact mail, we will then send download password to you.**
+**Please fill in the application form and send it to the contact mail, we will then send download links to you.**
 **We will update the download password regularly.**
 
 [Application Form](https://github.com/qhjqhj00/Pchatbot/blob/main/application.pdf)
