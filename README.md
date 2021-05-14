@@ -35,7 +35,7 @@ The following paper uses the Pchatbot dataset:
      publisher = {{ACM}}, 
      year = {2021}, 
      url = {https://doi.org/10.1145/3404835.3462828}, 
-     doi = {10.1145/3404835.3462828}, }
+     doi = {10.1145/3404835.3462828}}
 ```
 
 ### Dataset Statistics
