@@ -1,7 +1,5 @@
 
-# ![icon](figure/icon.png)Pchatbot: A Large-Scale Dataset for Personalized Chatbot
-
-[Chinese Version](https://github.com/qhjqhj00/Pchatbot/blob/main/README_zh.md)
+## <img src=figure/icon.png width=8% />Pchatbot: A Large-Scale Dataset for Personalized Chatbot
 
 
 ### Introduction
