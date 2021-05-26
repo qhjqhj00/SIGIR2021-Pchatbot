@@ -14,14 +14,14 @@ The dataset paper is accepted to SIGIR 2021 (Resource Track). See [paper](https:
 
 If you use the dataset in your work, please cite:
 ```
-@misc{qian2021pchatbot,
-      title={Pchatbot: A Large-Scale Dataset for Personalized Chatbot}, 
-      author={Hongjin Qian and Xiaohe Li and Hanxun Zhong and Yu Guo and Yueyuan Ma and Yutao Zhu and Zhanliang Liu and Zhicheng Dou and Ji-Rong Wen},
-      year={2021},
-      eprint={2009.13284},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
+@inproceedings{qian2021pchatbot,
+     author = {Hongjin Qian and Xiaohe Li and Hanxun Zhong and Yu Guo and Yueyuan Ma and Yutao Zhu and Zhanliang Liu and Zhicheng Dou and Ji-Rong Wen}, 
+     title = {Pchatbot: A Large-Scale Dataset for Personalized Chatbot}, 
+     booktitle = {Proceedings of the {SIGIR} 2021}, 
+     publisher = {{ACM}}, 
+     year = {2021}, 
+     url = {https://doi.org/10.1145/3404835.3463239}, 
+     doi = {10.1145/3404835.3463239}}
 ```
 
 The following paper uses the Pchatbot dataset:
