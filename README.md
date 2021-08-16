@@ -38,6 +38,18 @@ The following paper uses the Pchatbot dataset:
      doi = {10.1145/3404835.3462828}}
 ```
 
+2. Learning Implicit User Profile for Personalized Retrieval-based Chatbot (CIKM 2021 Long Paper)
+```
+@inproceedings{qian2021impchat,
+     author = {Hongjin Qian and Zhicheng Dou and Yutao Zhu Yueyuan Ma and Ji-Rong Wen}, 
+     title = {Learning Implicit User Profile for Personalized Retrieval-based Chatbot}, 
+     booktitle = {Proceedings of the {CIKM} 2021}, 
+     publisher = {{ACM}}, 
+     year = {2021},
+     url = {https://doi.org/10.1145/3459637.3482269},
+     doi = {10.1145/3459637.3482269}
+```
+
 ### Dataset Statistics
 
 The detailed statistics of Pchatbot shows as follow:
