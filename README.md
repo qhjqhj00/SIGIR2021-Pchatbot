@@ -100,7 +100,9 @@ Pchatbot-W:
 
 md5: cd443951973f47f5614df298e6e416da
 
-**Please fill in the application form and send it to the contact mail, we will then send download links to you. Note that the application form should be signed by the person in charge of your research group.**
+You can download via MEGA.NZ or [Baidu Cloud Disk](https://pan.baidu.com/s/1R-oRQmkX2XVo5dQLgEsvMw?pwd=2w8c).
+
+**Please fill in the application form and send it to the contact mail, we will then send the download links and the password for Baidu Cloud Disk to you. Note that the application form should be signed by the person in charge of your research group.**
 **We will update the download password regularly.**
 
 [Application Form](https://github.com/qhjqhj00/Pchatbot/blob/main/application.pdf)
