@@ -50,6 +50,24 @@ The following paper uses the Pchatbot dataset:
      doi = {10.1145/3459637.3482269}
 ```
 
+3. Less is More: Learning to Refine Dialogue History for Personalized Dialogue Generation (NAACL 2022 Long Paper)
+```
+@inproceedings{zhong-etal-2022-less,
+    title = "Less is More: Learning to Refine Dialogue History for Personalized Dialogue Generation",
+    author = "Zhong, Hanxun  and
+      Dou, Zhicheng  and
+      Zhu, Yutao  and
+      Qian, Hongjin  and
+      Wen, Ji-Rong",
+    booktitle = "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.naacl-main.426",
+    doi = "10.18653/v1/2022.naacl-main.426",
+    pages = "5808--5820"
+```
 ### Dataset Statistics
 
 The detailed statistics of Pchatbot shows as follow:
