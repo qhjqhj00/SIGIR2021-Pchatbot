@@ -118,7 +118,7 @@ Pchatbot-W:
 
 md5: cd443951973f47f5614df298e6e416da
 
-You can download via MEGA.NZ or [Baidu Cloud Disk](https://pan.baidu.com/s/1R-oRQmkX2XVo5dQLgEsvMw?pwd=2w8c).
+You can download via [Baidu Cloud Disk](https://pan.baidu.com/s/1R-oRQmkX2XVo5dQLgEsvMw?pwd=2w8c). If you cannot access Baidu Cloud Disk, contact us and we will try to provide other options.
 
 **Please fill in the application form and send it to the contact mail, we will then send the download links and the password for Baidu Cloud Disk to you. Note that the application form should be signed by the person in charge of your research group.**
 **We will update the download password regularly.**
